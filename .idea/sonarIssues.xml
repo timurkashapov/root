@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/products/catalog/catalog-api/src/main/java/ru/sbrf/sbbol/dcb/catalog/model/CatalogCustomOptions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/products/catalog/catalog-service/src/main/resources/spring/catalog-service-context.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/products/credit/credit-service/src/main/java/ru/sbrf/sbbol/dcb/document/credit/creditrequestmmb/CreditRequestMMBServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/products/credit/credit-service/src/main/java/ru/sbrf/sbbol/dcb/document/credit/creditrequestmmb/dao/CreditRequestMMBDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/products/credit/credit-service/src/main/java/ru/sbrf/sbbol/dcb/document/credit/creditrequestmmb/validator/GroupValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/products/credit/credit-service/src/main/java/ru/sbrf/sbbol/dcb/document/credit/creditrequestmmb/validator/custom/CreditRequestMmbValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/products/credit/credit-service/src/main/java/ru/sbrf/sbbol/dcb/document/credit/creditrequestmmb/validator/custom/ValidatorConstants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/system/resource-bundle/src/main/resources/bundles/messages.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/sbrf/pjc/sbbol/31/sbbol/dcb/system/resource-bundle/src/main/resources/bundles/messages_ru.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
