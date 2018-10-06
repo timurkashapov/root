@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/master.css">
-	<title>Корень</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <script type="text/javascript" src="js/vivagraph.js"></script>
+    <title>Корень</title>
 </head>
 <body>
 	<section>
 		<h2>алгоритмы и структуры данных</h2>
 		<h4>структуры данных</h4>
-        <a href="https://habr.com/post/129037/">труктуры данных в картинках</a>
+        <a href="https://habr.com/post/129037/">структуры данных в картинках</a>
 		<ul>
 			<ol><a href="">массив</a></ol>
 			<ol><a href="">указатель</a></ol>
@@ -99,5 +100,15 @@
             <li>MALLET</li>
         </ul>
     </section>
+
+    <script type="text/javascript">
+        var graph = Viva.Graph.graph();
+        graph.addNode(1);
+        graph.addNode(2);
+        graph.addNode(3);
+
+        var renderer = Viva.Graph.View.renderer(graph);
+        renderer.run();
+    </script>
 </body>
 </html>
