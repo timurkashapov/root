@@ -1,7 +1,7 @@
-package com.shako;
+package com.shako.service;
 
 /**
- * General service definition.
+ * General domain service layout definition.
  */
 public interface Service {
 

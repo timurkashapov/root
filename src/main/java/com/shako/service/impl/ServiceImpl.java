@@ -1,9 +1,9 @@
-package com.shako;
+package com.shako.service.impl;
 
 /**
- * Realization of the general service.
+ * Realization of the general domain service layout.
  */
-public class ServiceImpl implements com.shako.Service {
+public class ServiceImpl implements com.shako.service.Service {
 
     @Override
     public void create() {
