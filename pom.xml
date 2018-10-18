@@ -27,14 +27,17 @@
       <maven.install.plugin.version> 2.5.2 </maven.install.plugin.version>
       <maven.deploy.plugin.version> 2.8.2 </maven.deploy.plugin.version>
 
-      <junit.version>3.8.1</junit.version>
-      <gral.version>0.11</gral.version>
+      <junit.version> 3.8.1 </junit.version>
+      <gral.version> 0.11 </gral.version>
 
-      <springframework.boot.version>2.0.5.RELEASE</springframework.boot.version>
-      <springframework.boot.starter.version>2.0.5.RELEASE</springframework.boot.starter.version>
-      <springframework.web.version>3.2.0.RELEASE</springframework.web.version>
-      <springframework.web.starter.version>2.0.5.RELEASE</springframework.web.starter.version>
-
+      <springframework.boot.version> 2.0.5.RELEASE </springframework.boot.version>
+      <springframework.boot.starter.version> 2.0.5.RELEASE </springframework.boot.starter.version>
+      <springframework.web.version> 3.2.0.RELEASE </springframework.web.version>
+      <springframework.web.starter.version> 2.0.5.RELEASE </springframework.web.starter.version>
+      <spring.context.version> 5.1.0.RELEASE </spring.context.version>
+      <spring.context.support.version> 5.1.0.RELEASE </spring.context.support.version>
+      <spring.transaction.version> 5.1.0.RELEASE </spring.transaction.version>
+      <spring.jdbc.version> 5.1.0.RELEASE </spring.jdbc.version>
   </properties>
 
   <dependencies>
@@ -79,6 +82,34 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter</artifactId>
           <version>2.0.5.RELEASE</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+          <version>${spring.context.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context-support</artifactId>
+          <version>${spring.context.support.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-tx</artifactId>
+          <version>${spring.transaction.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-jdbc</artifactId>
+          <version>${spring.jdbc.version}</version>
       </dependency>
 
   </dependencies>
