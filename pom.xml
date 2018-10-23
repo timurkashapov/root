@@ -6,9 +6,15 @@
 
   <groupId>com.shako</groupId>
   <artifactId>root</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>oca</module>
+        <module>ocp</module>
+        <module>void</module>
+    </modules>
 
-  <name>root</name>
+    <name>root</name>
   <description>root</description>
   <url>http://www.shako.com</url>
 
@@ -47,6 +53,7 @@
           <groupId>junit</groupId>
           <artifactId>junit</artifactId>
           <version>${junit.version}</version>
+          <scope>test</scope>
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/de.erichseifert.gral/gral-core -->
