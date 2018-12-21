@@ -12,6 +12,7 @@
         <module>oca</module>
         <module>ocp</module>
         <module>void</module>
+        <module>apache</module>
     </modules>
 
     <name>root</name>
