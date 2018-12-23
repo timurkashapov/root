@@ -20,9 +20,12 @@
   <url>http://www.shako.com</url>
 
   <properties>
+
+      <source.encoding.utf8>UTF-8</source.encoding.utf8>
+
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.compiler.source>1.7</maven.compiler.source>
-      <maven.compiler.target>1.7</maven.compiler.target>
+      <maven.java.compiler.source>1.8</maven.java.compiler.source>
+      <maven.java.compiler.target>1.8</maven.java.compiler.target>
 
       <maven.clean.plugin.version> 3.0.0 </maven.clean.plugin.version>
       <maven.site.plugin.version> 3.7 </maven.site.plugin.version>
@@ -145,6 +148,11 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven.compiler.plugin.version}</version>
+            <configuration>
+                <source>${maven.java.compiler.source}</source>
+                <target>${maven.java.compiler.target}</target>
+                <encoding>${source.encoding.utf8}</encoding>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
