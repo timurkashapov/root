@@ -21,7 +21,7 @@ public class ConcreteSubject implements Subject {
     }
 
     @Override
-    public void attachObserver(Observer observer) {
+    public void attach(Observer observer) {
 
         try {
             observers.add(observer);
@@ -31,18 +31,15 @@ public class ConcreteSubject implements Subject {
     }
 
     @Override
-    public void detachObserverByName(String name) {
+    public void detach(Observer observer) {
 
     }
 
     @Override
-    public void getObserverByName(String name) {
-
-    }
-
-    @Override
-    public void setObserver(Observer observer) {
-
+    public void inform() {
+        for (Observer o : observers) {
+            o.update();
+        }
     }
 
     public List<Observer> getObservers() {
