@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.shako</groupId>
-  <artifactId>root</artifactId>
+    <groupId>com.shako</groupId>
+    <artifactId>root</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
@@ -13,173 +13,175 @@
         <module>ocp</module>
         <module>void</module>
         <module>apache</module>
+        <module>patterns</module>
+        <module>reactivex</module>
     </modules>
 
     <name>root</name>
-  <description>root</description>
-  <url>http://www.shako.com</url>
+    <description>root</description>
+    <url>http://www.shako.com</url>
 
-  <properties>
+    <properties>
 
-      <source.encoding.utf8>UTF-8</source.encoding.utf8>
+        <source.encoding.utf8>UTF-8</source.encoding.utf8>
 
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.java.compiler.source>1.8</maven.java.compiler.source>
-      <maven.java.compiler.target>1.8</maven.java.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.java.compiler.source>1.8</maven.java.compiler.source>
+        <maven.java.compiler.target>1.8</maven.java.compiler.target>
 
-      <maven.clean.plugin.version> 3.0.0 </maven.clean.plugin.version>
-      <maven.site.plugin.version> 3.7 </maven.site.plugin.version>
-      <maven.project.info-reports-plugin.version> 2.9 </maven.project.info-reports-plugin.version>
-      <maven.resources.plugin.version> 3.0.2 </maven.resources.plugin.version>
-      <maven.compiler.plugin.version> 3.7.0 </maven.compiler.plugin.version>
-      <maven.surefire.plugin.version> 2.20.1 </maven.surefire.plugin.version>
-      <maven.jar.plugin.version> 3.0.2 </maven.jar.plugin.version>
-      <maven.install.plugin.version> 2.5.2 </maven.install.plugin.version>
-      <maven.deploy.plugin.version> 2.8.2 </maven.deploy.plugin.version>
+        <maven.clean.plugin.version>3.0.0</maven.clean.plugin.version>
+        <maven.site.plugin.version>3.7</maven.site.plugin.version>
+        <maven.project.info-reports-plugin.version>2.9</maven.project.info-reports-plugin.version>
+        <maven.resources.plugin.version>3.0.2</maven.resources.plugin.version>
+        <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
+        <maven.surefire.plugin.version>2.20.1</maven.surefire.plugin.version>
+        <maven.jar.plugin.version>3.0.2</maven.jar.plugin.version>
+        <maven.install.plugin.version>2.5.2</maven.install.plugin.version>
+        <maven.deploy.plugin.version>2.8.2</maven.deploy.plugin.version>
 
-      <junit.version> 3.8.1 </junit.version>
-      <gral.version> 0.11 </gral.version>
 
-      <springframework.boot.version> 2.0.5.RELEASE </springframework.boot.version>
-      <springframework.boot.starter.version> 2.0.5.RELEASE </springframework.boot.starter.version>
-      <springframework.web.version> 3.2.0.RELEASE </springframework.web.version>
-      <springframework.web.starter.version> 2.0.5.RELEASE </springframework.web.starter.version>
-      <spring.context.version> 5.1.0.RELEASE </spring.context.version>
-      <spring.context.support.version> 5.1.0.RELEASE </spring.context.support.version>
-      <spring.transaction.version> 5.1.0.RELEASE </spring.transaction.version>
-      <spring.jdbc.version> 5.1.0.RELEASE </spring.jdbc.version>
-  </properties>
+        <junit.version>3.8.1</junit.version>
 
-  <dependencies>
+        <gral.version>0.11</gral.version>
 
-      <!--junit-->
-      <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <version>${junit.version}</version>
-          <scope>test</scope>
-      </dependency>
+        <sprinframeworkg.version>5.1.0.RELEASE</sprinframeworkg.version>
+        <springframework.boot.starter.version>2.0.5.RELEASE</springframework.boot.starter.version>
+        <springframework.boot.starter.web.version>2.0.5.RELEASE</springframework.boot.starter.web.version>
 
-      <!-- https://mvnrepository.com/artifact/de.erichseifert.gral/gral-core -->
-      <dependency>
-          <groupId>de.erichseifert.gral</groupId>
-          <artifactId>gral-core</artifactId>
-          <version>${gral.version}</version>
-      </dependency>
+    </properties>
 
-      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot</artifactId>
-          <version>${springframework.boot.version}</version>
-      </dependency>
+    <dependencies>
 
-      <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.web -->
-      <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>org.springframework.web</artifactId>
-          <version>${springframework.web.version}</version>
-      </dependency>
+        <!--junit-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
 
-      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-web</artifactId>
-          <version>2.0.5.RELEASE</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/de.erichseifert.gral/gral-core -->
+        <!--<dependency>-->
+        <!--<groupId>de.erichseifert.gral</groupId>-->
+        <!--<artifactId>gral-core</artifactId>-->
+        <!--<version>${gral.version}</version>-->
+        <!--</dependency>-->
 
-      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter</artifactId>
-          <version>2.0.5.RELEASE</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot</artifactId>-->
+        <!--<version>${springframework.version}</version>-->
+        <!--</dependency>-->
 
-      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-      <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-context</artifactId>
-          <version>${spring.context.version}</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.web -->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework</groupId>-->
+        <!--<artifactId>org.springframework.web</artifactId>-->
+        <!--<version>${springframework.version}</version>-->
+        <!--</dependency>-->
 
-      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
-      <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-context-support</artifactId>
-          <version>${spring.context.support.version}</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${springframework.boot.starter.web.version}</version>
+        </dependency>
 
-      <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
-      <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-tx</artifactId>
-          <version>${spring.transaction.version}</version>
-      </dependency>
 
-      <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
-      <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-jdbc</artifactId>
-          <version>${spring.jdbc.version}</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${springframework.boot.starter.version}</version>
+        </dependency>
 
-  </dependencies>
 
-  <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>${maven.clean.plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>${maven.site.plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>${maven.project.info-reports-plugin.version}</version>
-        </plugin>
-        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>${maven.resources.plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>${maven.compiler.plugin.version}</version>
-            <configuration>
-                <source>${maven.java.compiler.source}</source>
-                <target>${maven.java.compiler.target}</target>
-                <encoding>${source.encoding.utf8}</encoding>
-            </configuration>
-        </plugin>
-        <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>${maven.surefire.plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>${maven.jar.plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <version>${maven.install.plugin.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>${maven.deploy.plugin.version}</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${sprinframeworkg.version}</version>
+        </dependency>
 
-  <reporting>
-    <plugins>
-      <plugin>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </reporting>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${sprinframeworkg.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${sprinframeworkg.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${sprinframeworkg.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+            <plugins>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${maven.clean.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${maven.site.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven.project.info-reports-plugin.version}</version>
+                </plugin>
+                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven.resources.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compiler.plugin.version}</version>
+                    <configuration>
+                        <source>${maven.java.compiler.source}</source>
+                        <target>${maven.java.compiler.target}</target>
+                        <encoding>${source.encoding.utf8}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven.surefire.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven.jar.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${maven.install.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${maven.deploy.plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <!--<reporting>-->
+    <!--<plugins>-->
+    <!--<plugin>-->
+    <!--<artifactId>maven-project-info-reports-plugin</artifactId>-->
+    <!--</plugin>-->
+    <!--</plugins>-->
+    <!--</reporting>-->
 
 </project>
