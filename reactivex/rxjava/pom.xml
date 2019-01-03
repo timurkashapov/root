@@ -12,6 +12,11 @@
     <artifactId>rxjava</artifactId>
 
     <properties>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.java.compiler.source>1.8</maven.java.compiler.source>
+        <maven.java.compiler.target>1.8</maven.java.compiler.target>
+
         <reactivex.rxjava.version>2.2.5</reactivex.rxjava.version>
     </properties>
 
@@ -23,5 +28,19 @@
             <version>${reactivex.rxjava.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${maven.java.compiler.source}</source>
+                    <target>${maven.java.compiler.target}</target>
+                    <encoding>${source.encoding.utf8}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

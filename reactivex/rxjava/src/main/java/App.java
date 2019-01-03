@@ -1,3 +1,7 @@
+import io.reactivex.Flowable;
+
+import java.util.Arrays;
+
 public class App {
 
     static {
@@ -13,20 +17,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(Request.ID);
+        Flowable.just("Hello World").subscribe(System.out::println);
+        Arrays.asList(new int[]{1,2,3,4,5,6}).forEach(System.out::println);
     }
-}
-
-// запрос
-class Request {
-    public static final Integer ID=1;
-    private Request() {}
-    private Request(Data data) {
-
-    }
-}
-
-// данные
-class Data {
-    Data() {}
 }
