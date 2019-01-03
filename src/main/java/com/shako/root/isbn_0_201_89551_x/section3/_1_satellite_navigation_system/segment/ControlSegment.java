@@ -1,4 +1,9 @@
-package com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system;
+package com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system.segment;
+
+import com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system.exception.FullListOfControlStations;
+import com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system.GroundCentralControlStation;
+import com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system.exception.NotAddStation;
+import com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system.Station;
 
 import java.util.ArrayList;
 import java.util.List;

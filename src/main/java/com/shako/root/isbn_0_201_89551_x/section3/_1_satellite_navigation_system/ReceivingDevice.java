@@ -1,6 +1,9 @@
 package com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system;
 
+import com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system.common.Distance;
+
 import java.util.List;
+import java.util.Map;
 
 /**
  * Принимающее устройство.
@@ -12,4 +15,33 @@ public abstract class ReceivingDevice {
      */
     private List<Satellite> satellites;
 
+    private Map<Satellite, Distance> distanceToEachSatellites;
+
+    /**
+     * Вычислить расстояние (дистанцию) до всех спутников.
+     */
+    private void calcDistanceToAllSatellites() {
+        for (Satellite satellite : satellites) {
+            distanceToEachSatellites.put(satellite, calcDistanceToSatelite(satellite));
+        }
+    }
+
+    /**
+     * Вычислить расстояние (дистанцию) до спутника.
+     * @param satellite спутник.
+     * @return дистанция.
+     */
+    protected Distance calcDistanceToSatelite(Satellite satellite) {
+        return Distance.valueOf(
+                satellite.getTime().getValue(),
+                satellite.getCoordinate().getX(),
+                satellite.getCoordinate().getY());
+    }
+
+    public List<Satellite> getSatellites() {
+        return satellites;
+    }
+    public void setSatellites(List<Satellite> satellites) {
+        this.satellites = satellites;
+    }
 }
