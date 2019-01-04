@@ -1,4 +1,7 @@
-package com.shako.root.isbn_0_201_89551_x.section3._1_satellite_navigation_system;
+package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.actors;
+
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.ReceivingDevice;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.common.Condition;
 
 /**
  * Пользователь.

@@ -11,7 +11,7 @@
     <modules>
         <module>oca</module>
         <module>ocp</module>
-        <module>void</module>
+        <module>data_structures</module>
         <module>apache</module>
         <module>patterns</module>
         <module>reactivex</module>

@@ -1,14 +1,14 @@
 package behavior.observer;
 
-import com.shako.root.logger.ExceptionConsoleLoggerImpl;
-import com.shako.root.logger.Logger;
+//import com.shako.root.logger.ExceptionConsoleLoggerImpl;
+//import com.shako.root.logger.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ConcreteSubject implements Subject {
 
-    private Logger logger = new ExceptionConsoleLoggerImpl();
+//    private Logger logger = new ExceptionConsoleLoggerImpl();
 
     private List<Observer> observers;
     private State state;
@@ -26,7 +26,7 @@ public class ConcreteSubject implements Subject {
         try {
             observers.add(observer);
         } catch (Exception e) {
-            logger.log(e);
+//            logger.log(e);
         }
     }
 

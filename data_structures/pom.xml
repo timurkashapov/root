@@ -13,7 +13,7 @@
         <!--<junit.version> 3.8.1 </junit.version>-->
     <!--</properties>-->
 
-    <artifactId>void</artifactId>
+    <artifactId>data_structures</artifactId>
 
     <dependencies>
         <!--junit-->
