@@ -1,4 +1,4 @@
 package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.util.exception;
 
-public class NotAddStation extends Exception {
+public class FullListOfControlStationsException extends Exception {
 }

@@ -1,7 +1,6 @@
-package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment;
+package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.satellite;
 
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.Satellite;
-
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.Segment;
 import java.util.List;
 
 /**
@@ -18,4 +17,6 @@ public class CosmosSegment extends Segment {
      * Список спутников сегмента космоса системы GPS.
      */
     private List<Satellite> satellites;
+
+
 }
