@@ -1,9 +1,10 @@
-package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment;
+package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.ground;
 
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.util.exception.FullListOfControlStations;
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.stations.GroundCentralControlStation;
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.util.exception.NotAddStation;
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.stations.Station;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.Segment;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.util.exception.FullListOfControlStationsException;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.ground.stations.GroundCentralControlStation;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.util.exception.NotAddStationException;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.ground.stations.Station;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,16 +28,16 @@ public abstract class ControlSegment extends Segment {
      * Добавление станции для сегмента управления системы GPS.
      * @param station станция.
      */
-    void addStation(Station station) throws NotAddStation, FullListOfControlStations {
+    void addStation(Station station) throws NotAddStationException, FullListOfControlStationsException {
 
         if (stations.size() < STATIONS_AMOUNT) {
             for (Station s : stations) {
                 if (s instanceof GroundCentralControlStation) {
-                    throw new NotAddStation();
+                    throw new NotAddStationException();
                 }
             }
         } else {
-            throw new FullListOfControlStations();
+            throw new FullListOfControlStationsException();
         }
         stations.add(station);
     }

@@ -1,10 +1,11 @@
 package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain;
 
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.ControlSegment;
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.CosmosSegment;
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.UserSegment;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.common.NavigationMethod;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.ground.ControlSegment;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.satellite.CosmosSegment;
+import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.user.UserSegment;
 
-public class GPS {
+public class GPS implements SNS {
 
     private static final GPS GPS = new GPS();
 
@@ -40,5 +41,37 @@ public class GPS {
     @Override
     public String toString() {
         return NavigationMethod.GPS.toString();
+    }
+
+    public void launchSatellite() {
+
+    }
+
+    public void flyToSeparationPoint() {
+
+    }
+
+    public void activateSatellite() {
+
+    }
+
+    public void separateSatellite() {
+
+    }
+
+    public void moveSatelliteIntoOrbit() {
+
+    }
+
+    public void performSatelliteCheckout() {
+
+    }
+
+    public void prepareToOperations() {
+
+    }
+
+    public void transmitInitialPositionInformation() {
+
     }
 }
