@@ -1,6 +1,5 @@
-package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.ground;
+package com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment;
 
-import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.Segment;
 import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.util.exception.FullListOfControlStationsException;
 import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.domain.segment.ground.stations.GroundCentralControlStation;
 import com.shako.root.isbn_0_201_89551_x.section3._1_osgsp.util.exception.NotAddStationException;
@@ -12,7 +11,7 @@ import java.util.List;
 /**
  * Сегмент управления.
  */
-public abstract class ControlSegment extends Segment {
+public abstract class ControlSegment implements Segment {
 
     /**
      * Количество наземных станций с центральным пунктом управления включительно.
@@ -41,4 +40,9 @@ public abstract class ControlSegment extends Segment {
         }
         stations.add(station);
     }
+
+    /**
+     * Управление активацией спутника.
+     */
+    protected abstract void controlSatelliteActivation();
 }
