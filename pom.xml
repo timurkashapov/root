@@ -24,10 +24,12 @@
     <properties>
 
         <source.encoding.utf8>UTF-8</source.encoding.utf8>
-
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.java.compiler.source>1.8</maven.java.compiler.source>
         <maven.java.compiler.target>1.8</maven.java.compiler.target>
+
+        <jpa.version>2.2</jpa.version>
+        <hibernate.core.version>5.4.0.Final</hibernate.core.version>
+        <querydsl.jpa.version>4.2.1</querydsl.jpa.version>
 
         <maven.clean.plugin.version>3.0.0</maven.clean.plugin.version>
         <maven.site.plugin.version>3.7</maven.site.plugin.version>
@@ -47,10 +49,33 @@
         <sprinframeworkg.version>5.1.0.RELEASE</sprinframeworkg.version>
         <springframework.boot.starter.version>2.0.5.RELEASE</springframework.boot.starter.version>
         <springframework.boot.starter.web.version>2.0.5.RELEASE</springframework.boot.starter.web.version>
+        <springframework.oxm.version>3.0.2.RELEASE</springframework.oxm.version>
+        <spring.data.jpa.version>2.1.4.RELEASE</spring.data.jpa.version>
 
     </properties>
 
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>${jpa.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.core.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.querydsl/querydsl-jpa -->
+        <dependency>
+            <groupId>com.querydsl</groupId>
+            <artifactId>querydsl-jpa</artifactId>
+            <version>${querydsl.jpa.version}</version>
+        </dependency>
 
         <!--junit-->
         <dependency>
@@ -81,6 +106,14 @@
         <!--<version>${springframework.version}</version>-->
         <!--</dependency>-->
 
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring.data.jpa.version}</version>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -88,14 +121,12 @@
             <version>${springframework.boot.starter.web.version}</version>
         </dependency>
 
-
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <version>${springframework.boot.starter.version}</version>
         </dependency>
-
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
@@ -125,9 +156,17 @@
             <version>${sprinframeworkg.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.oxm -->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>org.springframework.oxm</artifactId>-->
+            <!--<version>${springframework.oxm.version}</version>-->
+        <!--</dependency>-->
+
     </dependencies>
 
     <build>
+
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>

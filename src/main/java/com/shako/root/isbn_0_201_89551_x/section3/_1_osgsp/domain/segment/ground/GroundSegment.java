@@ -51,4 +51,9 @@ public class GroundSegment extends ControlSegment {
      * Управление работой спутника.
      */
     void controlSatelliteWork() {}
+
+    @Override
+    protected void controlSatelliteActivation() {
+
+    }
 }

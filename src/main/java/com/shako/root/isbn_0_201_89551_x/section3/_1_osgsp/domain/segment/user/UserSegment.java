@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Сегмент пользователей.
  */
-public class UserSegment extends Segment {
+public class UserSegment implements Segment {
 
     private List<ReceivingDevice> receivingDevices;
 }
