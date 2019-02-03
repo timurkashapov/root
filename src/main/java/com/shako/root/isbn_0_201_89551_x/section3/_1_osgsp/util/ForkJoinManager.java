@@ -25,7 +25,7 @@ public class ForkJoinManager<T, R> {
     private Signal signal;
 
     {
-        receivers = new ArrayList<>();
+        receivers = new ArrayList<R>();
     }
 
     public ForkJoinManager() {}
